@@ -1,0 +1,103 @@
+:root{
+    --packageColor: #4a505dd4;
+    --premiumPackageColor: #373e4b;
+}
+
+body{
+    background: url("../images/freedom.jpg") center/cover;
+    background-position: top 10% left 10%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    width: 100%;
+    height: 100%;
+}
+
+main{
+    margin: 6rem auto;
+}
+
+.package{
+    width:70%;
+    max-width:50rem;
+    margin: 3rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.package a{
+    text-decoration:none;
+    color: inherit;
+    display: block;
+    padding: 2rem;
+}
+
+.package_title{
+    color: black;
+}
+
+.package_badge{
+    background: #ff5454;
+    width: max-content;
+    color: white;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 1rem;
+    padding: 0.5rem;
+    font-size: 0.8rem;
+    transform: rotateZ(45deg) translateX(3.5rem) translateY(-2.2rem);
+    transform-origin: center;
+    width: 12rem;
+    text-align:center;
+}
+
+.package_subtitle{
+    color: var(--premiumPackageColor);
+}
+
+.package_info{
+    background: white;
+    padding: 1rem;
+}
+
+.clearfix{
+    clear: both;
+}
+
+#plus{
+    background: var(--packageColor);
+    text-align: left;
+}
+
+#free{
+    background:var(--packageColor);
+    text-align: right;
+    margin: 3rem 3rem 3rem auto;
+}
+
+#premium{
+    background:var(--premiumPackageColor);
+    text-align: left;
+}
+
+#premium .package_title{
+    color: white;
+}
+#premium .package_subtitle{
+    color: #C0C0C0;
+}
+
+
+@media (max-width:1200px){
+    .package{
+        margin:3rem 0;
+    }
+    #plus{
+        border-left:none;
+    }
+    #free{
+        border-right:none;
+        text-align: right;
+        margin: 3rem 0 3rem auto;
+    }
+}
